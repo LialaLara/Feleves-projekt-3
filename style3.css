@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #a393bf;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  gap: 1px;
+  background-color: #3b2059;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+}
+
+.navbar button {
+  border-radius: 90px;
+  background-color: #453750;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  width: 90vh;
+  height: 50%;
+  transition: all, 2s, ease-in;
+}
+
+.navbar button:hover{
+  background-color: blueviolet;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  justify-content: center;
+  background-image: url(lila_színátmenet.jpg);
+  background-size: cover;
+  width: 100%;
+  min-height: 430px;
+  align-items: center;
+  font-size: x-large;
+  font-weight: lighter;
+}
+
+.h1 {
+  text-align: flex start;
+  justify-content: center;
+}
+
+.h2 {
+  text-align: flex end;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10%;
+  gap: 10%;
+  max-width: 100%;
+}
+
+.contener {
+  background-color: #3b2059;
+  border-radius: 8%;
+  font-weight: lighter;
+  padding: 10%;
+  margin: 15px;
+  display: flex;
+  text-wrap: pretty;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1;
+  min-height: 350px;
+  max-height: 380px;
+  min-width: 320px;
+  font-size: 25px;
+}
+
+.contener2 {
+  background-color: #3b2059;
+  border-radius: 90px;
+  width: 90%;
+  height: 5%;
+  font-weight: bold;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  grid-column: 1;
+  min-width: 400px;
+}
+
+img {
+  max-width: 100%;
+  height: max-contents 25%;
+  height: auto;
+  border-radius: 6%;
+  margin-top: 60px;
+  grid-column: 2 / 3;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 480px;
+  background-color: #3b2059;
+  color: white;
+  text-justify: left;
+  text-align: center;
+  border: 5px;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.social-media {
+  color: white;
+  font-size: x-large;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+@media (max-width: 1080px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
